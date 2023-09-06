@@ -126,11 +126,23 @@ namespace OOPSample1
             return int.TryParse(fInput, out int num);
         }
 
+        /// <summary>
+        /// Converts a string into a number
+        /// </summary>
+        /// <param name="num">the number in string form</param>
+        /// <returns>returns the int value for that string</returns>
         static int convToNum(string num)
         {
             return int.Parse(num);
         }
 
+        /// <summary>
+        /// Converts a string operation into the fixed numerical counterpart
+        /// for the operation
+        /// example: method will return 1 if the "+" is input to it.
+        /// </summary>
+        /// <param name="ope">the string operation</param>
+        /// <returns>number counterpart to the operation</returns>
         static int convToOperation(string ope)
         {
             int opeVal = 0;
@@ -160,6 +172,13 @@ namespace OOPSample1
             return opeVal;
         }
 
+        /// <summary>
+        /// performs the operation and returns the answer
+        /// </summary>
+        /// <param name="numA">the first number</param>
+        /// <param name="numB">the second number</param>
+        /// <param name="ope">the operation</param>
+        /// <returns>the answer</returns>
         static int performOperation(int numA, int numB, int ope)
         {
             int ans = numA;
