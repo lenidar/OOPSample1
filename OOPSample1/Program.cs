@@ -59,6 +59,7 @@ namespace OOPSample1
                     if(ope == -1)
                     {
                         Console.WriteLine("Not a valid operation, please try again!");
+                        Console.ReadKey();
                     }
                     else
                     {
