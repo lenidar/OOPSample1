@@ -111,9 +111,9 @@ namespace OOPSample1
         /// <returns>the first element of the string</returns>
         static string filterInput(string uInput)
         {
-            string[] temp = uInput.Split(' ');
-
-            return temp[0];
+            //string[] temp = uInput.Split(' ');
+            return uInput.Split(' ')[0];
+            //return temp[0];
         }
 
         /// <summary>
